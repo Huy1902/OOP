@@ -65,7 +65,7 @@
 - Char stream: Manipulate char:
   - Reader
   - Writer
-- All example with [code](Stream): 
+- All example with [code](src/Stream): 
 # c. Object in/out:
 - Belong to a corresponding stream and relate to a data source or a data sink
 # d. Buffer:
@@ -76,16 +76,16 @@
 - PrintStream class has object: System.in, System.out, System.err
 - Should not use System.in directly
 - Had better to use InputStreamReader + BufferedReader: Input -> InputStream -> Buffer -> Read <br> 
-![img_1.png](img_1.png)
+![img_1.png](src/img_1.png)
 <br>
 # f. File class:
 - File is an abstract representation of file and directory path names, for file manipulation: creating, 
 deleting, checking data attributes.
 - Stream is a sequence of data, for data manipulation: reading, writing.
 <br>
-![img_2.png](img_2.png)
-![img_3.png](img_3.png)
-![img_4.png](img_4.png)
+![img_2.png](src/img_2.png)
+![img_3.png](src/img_3.png)
+![img_4.png](src/img_4.png)
 <br>
 - FileReader, FileWriter is object CharStream
 # g. Manipulate with data file (consequent)
@@ -96,13 +96,13 @@ deleting, checking data attributes.
 - DataOutputStream: original data to byte
 - objectOutputStream: object to byte
 <br>
-![img_5.png](img_5.png)
+![img_5.png](src/img_5.png)
 <br>
 # h. Read/write object:
 - Must implement Serializable interface
-- For example <br> ![img_6.png](img_6.png)<br>
-- ![img_8.png](img_8.png)<br>
-- ![img_7.png](img_7.png) <br>
+- For example <br> ![img_6.png](src/img_6.png)<br>
+- ![img_8.png](src/img_8.png)<br>
+- ![img_7.png](src/img_7.png) <br>
 
 # i. RandomAccessFile:
 - Is a independent class, inheritance from Object directly
@@ -110,14 +110,14 @@ deleting, checking data attributes.
 - Record size must be fixed
 - Allows you to read and write to a file at any position
 - Manipulate in byte unit.
-- Some method: <br>![img_9.png](img_9.png)<br>
+- Some method: <br>![img_9.png](src/img_9.png)<br>
 - Remember seek follow byte.
 
 # j. Scanner
 - Initialize with parameter is input object (stream, file, string)
 - Method support directly input
-- For example: <br> ![img_10.png](img_10.png) <br>
+- For example: <br> ![img_10.png](src/img_10.png) <br>
 
 # k. Input/output abstract:
 - No specify source and sink -> improve reuse attribute.
-- For example: <br> ![img_11.png](img_11.png)<br>
+- For example: <br> ![img_11.png](src/img_11.png)<br>
